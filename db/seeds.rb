@@ -69,13 +69,13 @@ exercises = [
         }
       ]
 
-
+Exercise.destroy_all
 
 exercises.each do |exercise_info|
   task = Exercise.new
   task.name = exercise_info[:name]
   task.descr = exercise_info[:descr]
-  task.tip = true if exercise_info[:tip]
+  task.tip = if exercise_info[:tip]
   task.image = true if exercise_info[:image]
   task.save
 end

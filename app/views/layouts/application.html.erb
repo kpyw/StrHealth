@@ -19,15 +19,20 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="http://www.thera-band.com">Theraband</a>
   </div>
 
  <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="http://www.thera-band.com/UserFiles/Image/PullForceChartUpdate_500pxW.jpg">Colors</a></li>
-      <li><a href="#">Quick Track</a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exercises <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Favorite Workouts <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">MWF</a></li>
+          <li><a href="#">TTHSa</a></li>
+          <li><a href="#">PT plan</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">All Exercises <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <li><a href="#">Chest press</a></li>
           <li><a href="#">Overhead press</a></li>
@@ -43,28 +48,40 @@
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="http://drkatewolin.com">Wolin Lab</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">ACSM</a></li>
-          <li><a href="#">American Cancer Society</a></li>
-          <li><a href="#">Loyola University</a></li>
-
-        </ul>
-      </li>
-    </ul>
   </div>
 </nav>
 
 
-<%= yield %>
-
-</body>
-</html>
 
 <%= yield %>
 
+<div class="bs-example bs-navbar-bottom-example">
+  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://drkatewolin.com">Wolin Lab</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="<%= exercises_url %>">Home</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources
+          <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.acsm.org">ACSM</a></li>
+            <li><a href="http://www.cancer.org">American Cancer Society</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+</div>
 </body>
 </html>
