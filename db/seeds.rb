@@ -10,7 +10,7 @@ exercises = [
       {name: 'Seated Row',
         descr: 'Extend your legs and wrap middle of band around feet. Be sure band is secure by wrapping the middle around your feet so it won\'t slip. Grasp both ends of band with elbows straight. Pull band upward and back, bending elbows. Slowly return to starting position.',
         tip: 'Keep your knees and back straight.',
-        image: '/DSC_6384.jpg'
+        image: '/public/DSC_6384.jpg'
         },
       {name: 'Hip Abductor',
         descr: 'Begin by looping the middle of the band around the ankle of the exercising leg. Place the ends of the band under the opposite foot to stabilize the band and grasp the ends in your opposite hand. Keeping your knees straight, kick your leg outward against the band. Hold and slowly return.',
@@ -75,8 +75,12 @@ exercises.each do |exercise_info|
   task = Exercise.new
   task.name = exercise_info[:name]
   task.descr = exercise_info[:descr]
-  task.tip = if exercise_info[:tip]
-  task.image = true if exercise_info[:image]
+  if exercise_info[:tip] != ' '
+    task.tip = exercise_info[:tip]
+  end
+
+
+  task.image = exercise_info[:image]
   task.save
 end
 
