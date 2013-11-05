@@ -87,3 +87,4 @@ exercises.each do |exercise_info|
 end
 
 puts "There are now #{Exercise.count} items in the database."
+

@@ -1,31 +1,42 @@
 .navbar {
   background-color: #8ee5ee
-}
+  }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
   padding-top: 6px;
   font-size: 15px;
-}
+  }
 
 .jumbotron h1 {
   margin-top: 2px;
   font-size: 60px;
-}
+  }
 
 .tip {
   font-size: 20px;
-}
+  }
 
-.btn-sosa{color:#777;background-color:#8ee5ee;border-color:#7ac5cd}
+.btn-sosa{
+  color:#777;background-color:#8ee5ee;border-color:#7ac5cd
+  }
 
 .about{
   background-color:#8ee5ee
   }
 
-  h1 {
-    display: inline-block;
+.sosa {
+  color: #777;
   }
 
-.mystar{background-color: #8ee5ee; float: right;}
+h1 {
+  display: inline-block;
+  }
+
+.mystar{
+  background-color: #8ee5ee; float: right;
+  }
+.key-button {
+  background-color:   #98f5ff
+  }

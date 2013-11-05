@@ -13,7 +13,7 @@
 
 <nav class="navbar navbar-default" role="navigation">
 
-<h1><%= link_to "STRENGTH for Health", about_url%>
+<h1 class="sosa"><%= link_to "STRENGTH for Health", about_url%>
 </h1>
 
 <h3 class= "navbar-right"><i class="fa fa-user"></i> Profile Name
@@ -29,7 +29,7 @@
   </div>
 
  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
+    <ul class="nav navbar-nav key-button">
       <li class="active"><a href="<%= exercises_url %>">Home</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Favorite Workouts <b class="caret"></b></a>
@@ -39,7 +39,9 @@
           <li><a href="#">PT plan</a></li>
         </ul>
       </li>
+      <li><a href="#">My Data Summary</a></li>
     </ul>
+
 
     <ul class="nav navbar-nav navbar-right">
      <form class="navbar-form navbar-left" role="search">
