@@ -1,6 +1,8 @@
 <div class="container">
 <div class="jumbotron">
   <h1><%= @exercise[:name] %></h1>
+  <button type="button" class="fa fa-star mystar">Favorite</button>
+  <p></p>
   <img src="<%= @exercise[:image] %>" alt="<%= @exercise[:name] %>" style="width: 300px; height=200px;">
 
   <p class="lead" ><%=@exercise[:descr]%></p>
@@ -43,7 +45,7 @@
     </div>
 </div>
 <p>
-  <%= link_to "Go Back", exercises_url %>
+
 </p>
 </div>
 

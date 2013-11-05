@@ -28,4 +28,4 @@
     display: inline-block;
   }
 
-.fa fa-star{background-color: #8ee5ee}
+.mystar{background-color: #8ee5ee; float: right;}
