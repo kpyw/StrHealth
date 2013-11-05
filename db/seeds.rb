@@ -30,12 +30,12 @@ exercises = [
       {name: 'Calf Raise',
         descr: 'Place the middle of the band under the balls of both feet. Grasp the ends of the band at your hips. Keeping your elbows straight, raise your heels off the floor. Hold and slowly return.',
         tip: '',
-        image: '/DSC_7354.jpg'
+        image: '/DSC_7354.JPG'
         },
       {name: 'Leg Press Standing',
         descr: 'Begin by wrapping the middle of the band around your foot. Grasp the ends of the band at your chest, taking up the slack while you life your knee upward. Press your foot downward into the band, extending your hip and knee. Hold and slowly return.',
         tip: 'Keep your back straight. Don’t lean over.',
-        image: '/DSC_7344.jpg'
+        image: '/DSC_7344.JPG'
         },
       {name: 'Hip Extension',
         descr: 'Begin by looping the middle of the band around the ankle of the exercising leg. Place the ends of the band under the opposite foot to stabilize the band and grasp the ends in your opposite hand. Keeping your knee straight, extend your leg backwards against the band. Hold and slowly return.',
@@ -50,7 +50,7 @@ exercises = [
       {name: 'Lat Pulldown',
         descr: 'Grasp the ends of the band above shoulder height with your elbows extended. Bend your elbows and bring your hands to your shoulders, pulling the band down and back. Hold and slowly return.',
         tip: 'Keep your back and neck straight.',
-        image: '/DSC_7688.jpg'
+        image: '/DSC_7688.JPG'
         },
       {name: 'Overhead Press',
         descr: 'Place center of the band securely under one foot, and grasp each end of the band with palms facing forward. Lift arms forward & upward, extending your elbows with palms facing forward. Slowly return to the starting position.',
