@@ -66,7 +66,7 @@ exercises = [
         descr: 'Place middle of the band under both feet and grasp each end of the band with palms facing down. Pull the ends of the band upward toward your chin, lifting your elbows upward. Hold and slowly return to the starting position.',
         tip: 'This exercise can be done seated or standing. You may find you need a bit more support in your “core” (the muscles in your abdomen and stomach area) at the beginning. If so, try sitting until your core strength grows. ',
         image: '/public/DSC_6574.jpg'
-        }
+        },
       {name: 'tester', descr: 'lorem ipsum', tip: 'if you got a problem, yo, I\'ll solve it',
       image: 'http://1.bp.blogspot.com/-d7eiBjZ_j64/UYJ050SfsZI/AAAAAAAACWo/xTOO1Nz8QEw/s320/vanilla-ice.jpg'
         }
