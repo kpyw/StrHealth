@@ -9,6 +9,10 @@
         style="width: 200px; height=100px;" class="img-thumbnail">
     <div class="caption">
       <h5><%=link_to each.name, exercise_url(each.id)%></h5>
+      <div class="input-group">
+        <span class="input-group-addon">Band Color</span>
+        <input type="text" class = "form-control" placeholder ="band-color">
+      </div>
       <div class="btn-group">
         <button type="button" class="btn btn-sosa dropdown-toggle" data-toggle="dropdown">
           Sets<span class="caret"></span></button>
@@ -39,7 +43,7 @@
             <li>15</li>
           </ul>
       </div>
-      <button type="button" class="fa fa-star">
+      <button type="button" class="fa fa-star-o">
         Favorite
       </button>
       <p></p>
