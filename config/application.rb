@@ -5,13 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
-before_filter :authenticate
 
-def authenticate
-  authenticate_or_request_with_http_basic do |username, password|
-    username == ENV['HTTP_USERNAME'] && password == ENV['HTTP_PASSWORD']
-  end
-end
 
 module StrHealth
   class Application < Rails::Application
