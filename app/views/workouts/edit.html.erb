@@ -1,0 +1,21 @@
+<h1>Editing Workout #<%= @workout.id %></h1>
+
+
+<%= form_tag(workout_url(@workout), method: 'patch') do %>
+
+  <div>
+    <%= label_tag :wo_name %><br />
+    <%= text_field_tag :wo_name, @workout.wo_name %>
+  </div>
+
+  <div>
+    <%= label_tag :exercise_id %><br />
+    <%= number_field_tag :exercise_id, @workout.exercise_id %>
+  </div>
+
+  
+  <div>
+    <%= submit_tag "Update Workout" %>
+  </div>
+
+<% end %>

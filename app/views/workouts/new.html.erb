@@ -1,0 +1,21 @@
+<h1>New Workout</h1>
+
+
+<%= form_tag(workouts_url, method: 'post') do %>
+
+
+  <div>
+    <%= label_tag :wo_name %><br />
+    <%= text_field_tag :wo_name %>
+  </div>
+
+  <div>
+    <%= label_tag :exercise_id %><br />
+    <%= number_field_tag :exercise_id %>
+  </div>
+
+
+  <div>
+    <%= submit_tag "Create Workout" %>
+  </div>
+<% end %>
