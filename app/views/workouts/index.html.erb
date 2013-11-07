@@ -1,58 +1,6 @@
 <div class="container">
 <div class="row">
 
-<% @exercises.each do |each, i| %>
-
- <div class="col-md-4">
-  <div class=" thumbnail">
-    <img src="<%=each[:image]%>" alt="<%=each[:name]%>"
-        style="width: 200px; height=100px;" class="img-thumbnail">
-    <div class="caption">
-      <h5><%=link_to each.name, exercise_url(each.id)%></h5>
-      <div class="btn-group">
-        <button type="button" class="btn btn-sosa dropdown-toggle" data-toggle="dropdown">
-          Sets<span class="caret"></span></button>
-          <ul class="dropdown-menu" role="menu">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-          </ul>
-      </div>
-      <div class="btn-group">
-          <button type="button" class="btn btn-sosa dropdown-toggle" data-toggle="dropdown">
-          Reps per set<span class="caret"></span></button>
-          <ul class="dropdown-menu" role="menu">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>10</li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-          </ul>
-      </div>
-      <button type="button" class="fa fa-star">
-        Favorite
-      </button>
-      <p></p>
-      <div class="btn-group">
-        Date <class="btn btn-default btn-lg">
-        <input type="date" placeholder = "<%= Date.today %>" ></input>
-        </button>
-      </div>
-    </div>
-  </div>
-  <p></p>
- </div>
-
-<% end %>
+<h3>List all workouts created here</h3>
 </div>
 </div>

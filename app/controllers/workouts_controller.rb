@@ -1,20 +1,7 @@
 class WorkoutsController < ApplicationController
 
-workout=Workout.new
-
-def about
-
-end
-
 def index
-@workouts=Workout.find_by(id: params[:id])
-end
-
-
-def new
-end
-
-def create
+  @workouts=Workout.all
 end
 
 def show
@@ -23,13 +10,39 @@ def show
 
 end
 
+def new
+end
+
+def create
+   @workout = Workout.new
+   @workout.wo_name = params[:wo_name]
+    if @workout.save
+      redirect_to workouts_url
+    else
+      render 'new'
+    end
+end
+
+
+
 def edit
+  @workout = Workout.find_by(:id => params[:id])
 end
 
 def update
+  @workout = Workout.find_by(:id => params[:id])
+  @workout.wo_name = params[:wo_name]
+    if @workout.save
+      redirect_to workouts_url
+    else
+      render 'new'
+    end
 end
 
 def destroy
+  @workout = Workout.find_by(:id => params[:id])
+    @workout.destroy
+    redirect_to workouts_url
 end
 
 end
