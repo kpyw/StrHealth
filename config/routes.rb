@@ -7,6 +7,5 @@ get '/signin' => 'pages#signin'
 
 resources :exercises
 
-resources :workouts
 
 end
