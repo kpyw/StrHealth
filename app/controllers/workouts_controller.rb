@@ -15,7 +15,7 @@ class WorkoutsController < ApplicationController
     @workout = Workout.new
     @workout.wo_name = params[:wo_name]
     @workout.exercise_id = params[:exercise_id]
-    
+
     if @workout.save
       redirect_to workouts_url
     else
@@ -31,7 +31,7 @@ class WorkoutsController < ApplicationController
     @workout = Workout.find_by(:id => params[:id])
     @workout.wo_name = params[:wo_name]
     @workout.exercise_id = params[:exercise_id]
-    
+
     if @workout.save
       redirect_to workouts_url
     else
