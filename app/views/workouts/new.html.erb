@@ -5,23 +5,29 @@
 
 
   <div>
-    <%= label_tag :wo_name %><br />
+    <%= label_tag :wo_name , "Workout Name"%><br />
     <%= text_field_tag :wo_name %>
   </div>
 
   <div>
     <%= label_tag :exercise_id %><br />
-    <%= number_field_tag :exercise_id %>
+    <% exercises = Exercise.all.order("name") %>
+    <%= select_tag "exercise_id",
+                   options_from_collection_for_select(exercises, :id, :name) %>
   </div>
 
   <div>
     <%= label_tag :exercise_id %><br />
-    <%= number_field_tag :exercise_id %>
+   <% exercises = Exercise.all.order("name") %>
+    <%= select_tag "exercise_id",
+                   options_from_collection_for_select(exercises, :id, :name) %>
   </div>
 
   <div>
     <%= label_tag :exercise_id %><br />
-    <%= number_field_tag :exercise_id %>
+  <% exercises = Exercise.all.order("name") %>
+    <%= select_tag "exercise_id",
+                   options_from_collection_for_select(exercises, :id, :name) %>
   </div>
 
   <% if @errors != nil %>
