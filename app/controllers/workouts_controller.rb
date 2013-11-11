@@ -19,6 +19,7 @@ class WorkoutsController < ApplicationController
     if @workout.save
       redirect_to workouts_url
     else
+      @errors = @workout.errors.full_messages
       render 'new'
     end
   end

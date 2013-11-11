@@ -14,6 +14,21 @@
     <%= number_field_tag :exercise_id %>
   </div>
 
+  <div>
+    <%= label_tag :exercise_id %><br />
+    <%= number_field_tag :exercise_id %>
+  </div>
+
+  <div>
+    <%= label_tag :exercise_id %><br />
+    <%= number_field_tag :exercise_id %>
+  </div>
+
+  <% if @errors != nil %>
+    <% @workout.errors.full_messages.each do |error_msg| %>
+      <li><%= error_msg %></li>
+      <% end %>
+  <% end %>
 
   <div>
     <%= submit_tag "Create Workout" %>
