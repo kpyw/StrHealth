@@ -1,7 +1,17 @@
-.navbar {
-  background-color: #8ee5ee
+.header-wrap {
+  position: relative;
+  z-index: 10;
+  height: 150px;
+  width: 100%;
+  top: 0;
   }
 
+.navbar {
+  background-color: #f6b029;
+  position: relative;
+  }
+
+.key-button {float: right;}
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -19,15 +29,17 @@
   }
 
 .btn-sosa{
-  color:#777;background-color:#8ee5ee;border-color:#7ac5cd
+  color:#777;background-color:#f6b029;border-color:#f4ce86
   }
 
 .about{
-  background-color:#8ee5ee
+  background-color:#f6b029
   }
 
 .sosa {
   color: #777;
+  margin-top: 0px;
+  margin-bottom: 0px
   }
 
 h1 {
@@ -35,8 +47,24 @@ h1 {
   }
 
 .mystar{
-  background-color: #8ee5ee; float: right;
+  background-color: #f6b029; float: right;
   }
+
 .key-button {
-  background-color:   #98f5ff
+  background-color:   #f4ce86;
+
+  margin-top: 60px;
+  float: right;
   }
+
+.utility-nav {
+  padding-top: 20px;
+  position: absolute;
+  right: 0;
+  z-index: 100;
+}
+.navbar-right {
+color: #0B1560}
+
+.bs-navbar-bottom-example{}
+
