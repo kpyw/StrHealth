@@ -1,7 +1,7 @@
 StrHealth::Application.routes.draw do
 
 
-root 'exercises#index'
+root 'pages#start'
 
 get '/about' => 'pages#about'
 get '/signin' => 'pages#signin'
