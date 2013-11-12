@@ -6,4 +6,6 @@ end
 def signin
   end
 
+def start
+end
 end

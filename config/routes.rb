@@ -5,6 +5,7 @@ root 'exercises#index'
 
 get '/about' => 'pages#about'
 get '/signin' => 'pages#signin'
+get '/start' => 'pages#start'
 
 resources :exercises
 
