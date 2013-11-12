@@ -10,6 +10,7 @@
  *
  *= require bootstrap.min
  *= require_self
- *= require_tree .
+
  *= require s4h
+ *= require signin
  */
