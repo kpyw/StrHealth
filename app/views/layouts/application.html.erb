@@ -34,7 +34,12 @@
           </ul>
       </li>
     </ul>
-    <h3 class="fa fa-user navbar-right"> Profile Name</h3>
+     <% if session[:user_id] %>
+    <h3 class="fa fa-user navbar-right"> <%= User.find_by(id: session[:user_id]).firstname %></h3>
+    <span><%= link_to "Sign Out", '/logout' %></span>
+    <% else %>
+    <h3 class="fa fa-user navbar-right"> <%= link_to "Login", "/login" %></h3>
+      <% end %>
   </div>
 </nav>
 </div>

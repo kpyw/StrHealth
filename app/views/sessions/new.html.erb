@@ -13,26 +13,22 @@
 
     <div class="container">
 
-      <form class="form-signin">
-        <h2 class="form-signin-heading">Please sign in</h2>
-        <% form_tag sessions_url do %>
+
+        <h2 class="login-heading">Please sign in</h2>
+        <%= form_tag sessions_url, method: "post", class: 'form-signin' do %>
             <%= label_tag :email, "Email address" %>
-            <%= text_field_tag :email, "email address", size: 80 %><br>
+            <%= text_field_tag :email, nil, size: 80, class: "form-control", placeholder: "Email address" %><br>
 
             <%= label_tag :password, "Password" %>
-            <%= password_field_tag :password  %><br>
-        <% end %>
-        <input type="text" class="form-control" placeholder="Email address" required autofocus>
-        <input type="password" class="form-control" placeholder="Password" required>
+            <%= password_field_tag :password, nil, size: 80, class: "form-control", placeholder: "Password"  %><br>
+
+            <%= submit_tag "Sign in", class: "btn btn-lg btn-sosa btn-block" %>
+         <% end %>
 
 
-        <label class="checkbox">
-          <input type="checkbox" value="remember-me"> Remember me
-        </label>
-        <button class="btn btn-lg btn-sosa btn-block" type="submit"><%= submit_tag "Sign in" %></button>
-      </form>
+    </div>
 
-    </div> <!-- /container -->
+    <!-- /container -->
 
 
     <!-- Bootstrap core JavaScript

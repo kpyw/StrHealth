@@ -81,7 +81,9 @@ body {
   background-color: #fff;
 }
 
-
+.login-heading{
+    text-align: center;
+}
 
 .form-signin {
   max-width: 330px;
@@ -91,6 +93,7 @@ body {
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
+
 }
 .form-signin .checkbox {
   font-weight: normal;
