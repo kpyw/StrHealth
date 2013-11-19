@@ -16,10 +16,10 @@
 
         <h2 class="login-heading">Please sign in</h2>
         <%= form_tag sessions_url, method: "post", class: 'form-signin' do %>
-            <%= label_tag :email, "Email address" %>
+
             <%= text_field_tag :email, nil, size: 80, class: "form-control", placeholder: "Email address" %><br>
 
-            <%= label_tag :password, "Password" %>
+
             <%= password_field_tag :password, nil, size: 80, class: "form-control", placeholder: "Password"  %><br>
 
             <%= submit_tag "Sign in", class: "btn btn-lg btn-sosa btn-block" %>
