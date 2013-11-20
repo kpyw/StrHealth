@@ -56,7 +56,7 @@ h1 {
 .key-button {
   background-color:   #f4ce86;
   color: #0B1560;
-  margin-top: 60px;
+  margin-top: 10px;
   float: right;
   }
 
@@ -65,12 +65,14 @@ h1 {
   position: absolute;
   right: 0;
   z-index: 100;
-}
+  }
 .navbar-right {
-color: #0B1560;
-padding-right: 20px ;}
+  color: #0B1560;
+  padding-right: 20px ;
+  clear: left;
+  margin-left: 10px;
+  }
 
-.bs-navbar-bottom-example{}
 .s4h {
   text-align: left;
   font-size: 18px;
